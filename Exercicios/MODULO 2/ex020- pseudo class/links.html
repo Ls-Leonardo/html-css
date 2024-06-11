@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links (Pseudo-elemento)</title>
+    <style>
+            /*
+                #     = id
+                .     = class
+                ::    = pseudo-element
+                >     = children
+            */
+
+
+        body{font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        a{                          /* config padrão */
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{                  /* quando a pág foi visitada*/
+            color: darkred;
+        }
+
+        a:hover{                    /*quando passa o mouse*/
+            color: black;
+            text-decoration: underline;
+           
+        }
+
+        a:active{                 /* quando é clicado*/
+            color: yellow;
+        }
+
+        a.especial::before{
+            content: ' <';
+            color:rgb(240, 8, 8);
+            font-weight: normal;
+            text-decoration: none;
+            
+        }
+        a.especial::after {
+            content: ' >';
+            text-decoration: none;
+            font-weight: normal;
+            color:rgb(240, 8, 8)
+        }
+       
+
+    </style>
+</head>
+<body>
+        <!--Pseudoelemento mexe no contéudo periférico do elemento-->
+        <h1>Personalizando Links</h1>
+
+        <ul type="square">
+                <li><a href="https://github.com/gustavoguanabara/html-css/">Repositório GitHub</a></li>
+
+                <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" class="especial">Canal do Youtube</a></li>
+
+                <li><a href="https://www.cursoemvideo.com/">Site do CursoemVideo</a></li>
+
+
+        </ul>
+</body>
+</html>

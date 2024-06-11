@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+    <style>
+        body{background-color: rgb(172, 228, 228);}
+
+    </style>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+
+    <h2>Código Fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+    <!--Para codigos de programação, codigo fonte use code, faz com que todas as letras tenham o mesmo espaço lateral. FONTE monoespaçada-->
+    <pre>
+        <code>
+    num= int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é IMPAR')
+    print('FIM DO PROGRAMA')
+        </code>
+    </pre>
+    <!--Use a tag <pre> para arrumar o código (indentação) use tab ou shift tab (joga o código para esquerda). Essa tag considera todos os espaços e formatação de texto.-->
+
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <!--A tag <q> coloca o contéudo entre aspas, use para citação-->
+
+
+    <h2>Citações completas</h2>
+    <p>Segundo Gustavo Guanabara, em seu video de HTML para leigos:</p>
+    <blockquote cite="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-8-aula-4-citacoes-e-codigos/">
+    A diferença entre elementos inline e um bloco de texto é importante, os elementos HTML nesse capítulo descrevem os blocos de texto.
+    </blockquote>
+    <!--Citação composta, use blockquote, aplica deslocamento e quebra de linha-->
+
+    
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. To curtindo😃</p>
+    <!--Quando a pessoa passar o mouse em cima de HTML ou de CSS, vai aparecer um texto explicando o que elas significam-->
+
+
+    <h2>Texto Invertido</h2>
+    <p>
+        
+        <bdo dir="rtl">CASA</bdo>   <br>
+        <bdo dir="ltr">CASA</bdo>
+    </p>
+        <!--Tag para inverter as coisas, sei lá porque-->
+
+        
+</body>
+</html>

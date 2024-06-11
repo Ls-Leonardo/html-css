@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+
+
+<body>
+    <h1>Trabalhando com imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+
+    <h1>Reproduzindo Aúdio</h1>
+    <p>Vamos aprender a reproduzir um aúdio</p>
+
+    <!--<audio src="midia/helium.mp3" controls autoplay></audio>
+    MPG WAV OGG, todos são formatos! no nosso caso é mp3, mas vamos ver os outros-->
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/helium.mp3" type="audio/mpeg">
+        <source src="midia/helium.ogg" type="audio/ogg">
+        <source src="midia/helium.wav" type="audio/wav">
+        
+        <p>Desculpe, infelizmente seu navegador não conseguiu reproduzir o audio, mas você ainda pode baixar clicando aqui: <a href="midia/helium.mp3"></a></p>
+    </audio>
+   <!--Simulando que temos o mesmo audio em 3 formatos diferentes, seria assim que iriamos adicionar. A ORDEM IMPORTA! ELE VAI CARREGAR PRIMEIRO O MP3 NESSE CASO-->
+   <!--WAV É UMA MERDA, SE PUDER NEM USA-->
+
+
+
+
+
+
+
+
+   
+</body>
+</html>

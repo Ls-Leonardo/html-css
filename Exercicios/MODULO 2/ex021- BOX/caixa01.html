@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODELO DE CAIXAS</title>
+    <style>
+            /* Por padrão o h1 é box-level e o link é inline, mas você pode transforma-los usando a tag display
+            como por exemplo dentro do h1 usar 
+            display: inline/// ou no link usar display: block */
+
+
+            h1{
+                background-color: lightgray;
+                height: 300px;
+                width: 300px;
+
+                border-width: 10px;
+                border-style: solid;
+                border-color: darkcyan;
+                /* border: 10px solid darkcyan -SHORTHAND- */
+                
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                /* padding: 10px 10px 10px 10px -como elas são iguais bastaria colocar '10px' uma vez só- */ 
+
+                margin-top: 10px;
+                margin-right: 10px;
+                margin-bottom: 40px;
+                margin-left: 10px;
+                /* margin: 10px 10px 10px 10px */
+
+                outline-width: 5px;
+                outline-style: dotted;
+                outline-color: black;
+                /* outline: 5px dotted black
+
+                /* para deixar a caixa centralizada basta usar margin: auto */
+            }
+
+            a{ 
+                border-width: 10px;
+                border-style: solid;
+                border-color: red;
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+
+            }
+    </style>
+</head>
+<body>
+            <h1>Exemplo de caixa BOX LEVEL</h1>
+            <p>Parágrafos também são exemplos de box level, mas os <a href="#">links</a> são exemplos de caixas inline-level. Vamos ver como isso funciona.</p>
+</body>
+</html>
