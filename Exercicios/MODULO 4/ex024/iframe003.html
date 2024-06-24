@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{    
+            width: 95vw;
+            border: 2px solid black;
+            height: 400px;
+
+        }
+    </style>
+</head>
+<body>
+        <h1>Faça uma escolha</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates doloremque provident eaque quia repellat laborum placeat, ea et aliquam ipsam perspiciatis dolores ut accusantium voluptatum facilis dolorem ad reprehenderit deserunt!</p>
+
+        <!--Note que meu target é diferente, ele é exatamente o name (do iframe) que está lá na parte de baixo. Parece mágica! -->
+        <ul>
+            <li><a href="paginas-extras/pag001.html" target="frame">Primeira Página</a></li>
+            <li><a href="paginas-extras/pag002.html" target="frame">Segunda Página</a ></li>
+            <li><a href="paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sint suscipit, accusamus debitis sit temporibus. Eos incidunt provident porro modi saepe minima! Possimus ex incidunt totam qui, ut molestiae cupiditate? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere est earum ad vitae unde incidunt quaerat esse optio nisi provident, doloremque fugit aperiam at veritatis consectetur fuga quos dolorem nostrum?</p>
+
+        <!--Dei nome a ele pra poder linkar com os links lá encima-->
+        <iframe id="tela" name="frame" src="">Infelizmente seu navegador não é compatível com isso.</iframe>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, delectus temporibus numquam itaque officiis similique corrupti fugiat odit, ipsam consectetur cum pariatur placeat molestias neque ad aut eveniet, nihil vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, perferendis magnam consequatur illum sed consequuntur aut obcaecati in odit cupiditate, asperiores sit reprehenderit quibusdam veritatis minima, commodi modi ex quae!</p>
+</body>
+</html>
