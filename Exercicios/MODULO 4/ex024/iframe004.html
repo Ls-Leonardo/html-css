@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos at recusandae, voluptas sunt enim numquam? Quaerat earum magnam fuga? Suscipit repudiandae laboriosam repellat eum voluptates aperiam. Rerum, atque iste!</p>
+
+    <!--Configs de segurança ao usar iframes
+    O contéudo digitado pelo usuário dentro do iframe não será coletado-->
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referer" width="600px"></iframe>
+    <!--Sandbox com o valor sandbox liga TODAS as configs de segurança-->
+
+    <!--Nesse caso eu permiti algumas coisas, scripts, contéudo da mesma origem e formularios, mas todo resto está ligado.-->
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor nostrum delectus consectetur repellat enim veniam illo laboriosam unde odit, in hic sequi quo at! Consectetur iusto numquam asperiores veritatis officiis?</p>
+</body>
+</html>
