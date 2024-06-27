@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo os parametros de INPUT</title>
+</head>
+<body>
+
+                                       
+        <!--INPUT: TYPE -->
+
+     <!--Text (caixa de texto simples)-->
+     <!--Password (especial, não mostra oq foi digitado)-->
+     <!--Submit (esse é no final, pra enviar os dados)-->
+     <!--Reset (limpa os dados)-->
+
+     <!--Atributos: 
+        required (faz o campo ser obrigatório) - colocado no input
+        minlength (precisa ter esse minimo de letras)
+        maxlength (só pode ter no máximo essa quantidade de letras)
+        size: tamanho da caixa
+
+        name & id : Id é importante para relacionar com o Label, e name é importante para o HMTL e PHP
+
+        placeholder: local para colocar coisas, pode ser adicionado dentro dos campos para fornecer dicas ou informações (Ex: placeholder: Username)
+
+        autocomplete: primeiro precisa estar ligado no form, depois pode usar em cada campo, sendo que nesses campos ele aceita varias opções (username, nickname, etc)
+        
+                                               -->
+
+
+
+
+        <h1>Teste de Formulario</h1>
+        <form action="cadastro.php" method="post" autocomplete="off">
+        
+            <p>
+                <label for="iusu">Usuário</label>
+                <input required type="text" name="usu" id="iusu" minlength="5" maxlength="10" autocomplete="username">
+            </p>
+
+            <p>
+                <label for="isen">Senha</label>
+                <input required type="password" name="sen" id="isen" minlength="8" placeholder="password" size="30">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+
+
+
+        </form>
+
+
+</body>
+</html>

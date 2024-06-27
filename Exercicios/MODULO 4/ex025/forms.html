@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <!--Method = Get or Post ( diferença de velocidade imperceptivel) 👀-->
+
+    <!--Get = dados aparecem na URL, não usar em contéudos sensiveis (senhas, endereços, etc) não pode ultrapassar 3000 bytes (aprox 3000 letras) e URL compartilhavel-->
+
+    <!--Post = dados não aparecem na URL (isso não significa que é seguro), sem limite de bytes, usar para dados sensiveis-->
+
+    <!--Name é mais util pra HTML e id para JS-->
+
+    <!--Ao usar label temos o atributo For, use o ID do input para identificar cada campo-->
+
+    <!--Estrutura do formulário:
+        Form (autocomplete-method-action)
+            Label (for) - input (text- password, etc)
+            input:submit    -->
+    
+    <!--Text (caixa de texto simples)-->
+    <!--Password (especial, não mostra oq foi digitado)-->
+    
+                                       
+    <h1>Meu primeiro Formulário</h1>
+
+    <form 
+    autocomplete="off" action="cadastro.php" method="post">
+
+    <p>
+        <Label for="inome">Nome</Label>
+        <input type="text" name="nome" id="inome">
+    </p>
+
+
+    <p>
+        <Label for="isobrenome">Sobrenome</Label>
+        <input type="text" name="sobrenome" id="isobrenome">
+    </p>
+
+
+    <p>
+        <input type="submit" value="Enviar">
+    </p>
+        
+
+    </form>
+
+    
+
+
+
+
+
+
+</body>
+</html>
