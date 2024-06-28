@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais comandos no Formulario</title>
+</head>
+<body>
+    <!--Min e Max são relativos ao numero minimo e máximo que um usuário pode digitar.-->
+
+    <!--Step é passo, colocando 0.1 o numero vai de 0.1 em 0.1 bom para quando precisamos de numeros quebrados-->
+
+
+    <!--Tipos de Inputs-->
+    <!--Month = mês, adicionando ele o usuário pode escolher uma data com mês e ano-->
+
+    <!--Date é como o Month, mas oferece valores para      dia/mes/ano-->
+
+    <!--AO usar o atributo VALUE, o PLACEHOLDER é retirado automáticamente-->
+
+
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="cnome">Nome</label>
+            <input type="text" name="nome" id="cnome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+
+        </p>
+
+        <p>
+            <label for="cmedia">Média</label>
+            <input type="number" name="media" id="cmedia" min="0" max="10" step="0.1" required>
+
+        </p>
+
+        <!--Adicionei um valor sugestivo, value cancela o placeholder-->
+        <p>
+            <label for="cmes">Período Letivo</label>
+            <input type="month" name="mes" id="cmes"   value="2024-06">
+        </p>
+
+        <!--Aparece no Navegador  Ano-Mes-Dia  -->
+        <p>
+            <label for="cdia">Dia da Prova</label>
+            <input type="date" name="dia" id="cdia">
+        </p>
+
+        <p>
+            <label for="ihora">Hora da Prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </p>
+
+
+
+
+
+    </form>
+</body>
+</html>
