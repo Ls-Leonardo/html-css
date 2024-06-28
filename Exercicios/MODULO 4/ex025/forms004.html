@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tel e Email no Formulário</title>
+</head>
+<body>
+    <!--Email - para pedir o email do usuário, obriga ele a digitar o @ porque todos os emails tem, mas não faz nenhum tipo de validação-->
+
+    <!--Tel para pedir o telefone, podemos usar o Pattern com ReGex para fazer uma validação e obrigar o usuário a digitar o formato correto, o pattern deve estar dentro de  ^$-->
+
+    <!--Fieldset: agrupa os campos desejados-->
+
+    <!--Legend: legenda usada logo abaixo do fieldset para informar o nome do grupo de campos a seguir-->
+
+
+
+    <h1>Telefone e Email</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="cnome">Nome</label>
+                <input type="text" name="nome" id="cnome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="cemail">Email</label>
+                <input type="email" name="email" id="cemail" required>
+            </p>
+            <!--Estudar mais sobre ReGex-->
+            <p>
+                <label for="ctel">Telefone</label>
+                <input type="tel" name="tel" id="ctel" required pattern="^[1-9]{2}-[0-9]{4}-[0-9]{4}$" placeholder="(xx) xxxx-xxxx">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+
+
+
+
+
+
+    </form>
+</body>
+</html>
