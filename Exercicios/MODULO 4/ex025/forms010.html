@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Output</title>
+</head>
+<body>
+    <h1>Mais algumas funcionalidades do Output</h1>
+
+    <p>No momento que estou escrevendo isso, não sei nada sobre Javascript, então tá bem complicado entender os comandos, mas eu vou voltar aqui e atualizar esse parágrafo !</p>
+
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="cano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="cano" min="1900" max="2024" oninput="calcIdade()">
+        
+        </p>
+
+        <p>
+            <label for="cidade">Sua idade é: </label>
+            <output id="cidade">0</output>
+        </p>
+
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">   
+        </p>
+
+
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            cidade.innerHTML = Number(atual) - Number(cano.value)
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento Output</title>
+</head>
+<body>
+    <h1>Aprendendo a usar Output em HTML5</h1>
+
+    <p>Não é para enviar coisas na tela e sim para mostrar resultados na tela!</p>
+
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="cn1">Número 1:</label>
+            <input type="number" name="n1" id="cn1" required min="0" max="50" oninput="csoma.innerHTML = Number(cn1.value) + Number(cn2.value)">
+        </p>
+
+        <p>
+            <label for="cn2">Número 2:</label>
+            <input type="number" name="n2" id="cn2" required min="0" max="50" oninput="csoma.innerHTML = Number(cn1.value) + Number(cn2.value)"  >
+        </p>
+
+        <p>
+            <label for="csoma">Soma: </label>
+            <output name="soma" id="csoma">0</output>
+            
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+
+</body>
+</html>
