@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select, datalist e Textarea</title>
+</head>
+<body>
+    <h1>Aprendendo outros comandos: Select, Datalist e Textarea</h1>
+
+    <!--Podemos usar o Select logo após o Label e criar uma lista com varias opções pré definidas para o usuário digitar, como no caso dos Estados Brasileiros. 
+    Select
+      optgroup (opcional) - agrupa as opções (usar label p identificar)
+        options-->
+
+        <!--Dentro de option, podemos usar o atributo SELECTED, isso faz com que ele já venha selecionado por padrão-->
+
+
+
+
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="cest">Estado:</label>
+            <select name="estado" id="cest">
+
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+
+        <!--Datalist funciona como uma lista mista, você pode digitar algo ou escolher os que já estão predefinidos, eles estão ligados pelo ID da lista e pela opção LIST do input, note que ambas possuem o mesmo nome.-->
+        <p>
+            <label for="cprof">Profissão</label>
+            <input type="text" name="prof" id="cprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+            
+        </p>
+
+
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <!--Textarea serve como um espaço para o usuário  digitar coisas, como um comentário final ou opinião
+        note que inserimos cols e rows (colunas e linhas), mas esse não é o MAXIMO, não existe MAX -->
+        <p>
+            <label for="cmsg">Mensagem: </label> <br>
+            <textarea name="msg" id="cmsg" cols="50" rows="40"></textarea>
+        </p>
+
+
+
+
+
+
+
+
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Adicionais</title>
+</head>
+<body>
+    <h1>Color, Range e File em HMTL5</h1>
+    <p>Mais alguns comandos de INPUT</p>
+
+    <!--Value coloca sempre um valor padrão em nossos elementos.Ambos controles são representados de forma diferente em diversos navegadores, então é bom sempre testar para ver o resultado-->
+
+    
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="ccor">Cor:</label>
+            <input type="color" name="cor" id="ccor" value="#00ff00">
+        </p>
+
+        <p>
+            <label for="cnivel">Nivel de Satisfação:</label>
+            <input type="range" name="nivel" id="cnivel" min="1" max="5" value="2">
+        </p>
+        <!--Não usamos o input:image porque ele não deixa o usuário escolher a foto, o DEV que manda as opções-->
+        <!--Ao usar esse controle de envio de arquivos, sempre use o metodo POST e não GET-->
+        <p>
+            <label for="cfoto">Foto do perfil</label>
+            <input type="file" name="foto" id="cfoto">
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+
+
+
+
+</body>
+</html>
