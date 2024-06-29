@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outros controles do <Input></Input></title>
+</head>
+<body>
+    <!--OBS: No campo para selecionar SEXO, optamos por um input do tipo Radio, normalmente queremos que o usuário selecione uma opçao ou outra. Nesse caso o campo NAME precisa ser igual para todas as opções, como no exemplo abaixo.-->
+
+
+    <!--Você pode inserir o elemento   checked  dentro do input, isso vai marcar a caixa automáticamente, dentro de radio só pode um, mas no checkbox pode colocar infinitamente-->
+
+        <h1>Checkbox and Radio</h1>
+
+        <form action="cadastro.php" method="get">
+
+            <fieldset>
+                <legend>Sexo</legend>
+
+                <input type="radio" name="sex" id="cmas" value="M"> <label for="cmas">Masculino</label>
+
+                <input type="radio" name="sex" id="cfem" value="F"> <label for="cfem">Feminino</label>
+
+            </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <fieldset>
+                <legend>Esportes favoritos</legend>
+
+                <input type="checkbox" name="esbas" id="cbas"><label for="cbas">Basquete</label> <br>
+
+                <input type="checkbox" name="esfut" id="cfut"><label for="cfut">Futebol</label> <br>
+
+                <input type="checkbox" name="esnat" id="cnat"><label for="cnat">Natação</label> <br>
+
+
+                <input type="checkbox" name="esten" id="cten"><label for="cten">Tênis</label>
+
+            </fieldset>
+
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </form>
+
+</body>
+</html>
