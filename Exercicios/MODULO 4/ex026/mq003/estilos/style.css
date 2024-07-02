@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* poderia usar o comando @media all para jogar as configs gerais. */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+
+h1{
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    padding: 10px;
+}
+
+/* <!--Declaraçôes portrait--> */
+@media screen and (orientation: portrait){
+    body{
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+        }
+    
+                                        }
+
+
+/* <!--Declaraçôes Landscape--> */
+@media screen and (orientation: landscape) {
+    body{
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+        }
+
+}
