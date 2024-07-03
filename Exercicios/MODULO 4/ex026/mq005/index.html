@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <link rel="stylesheet" href="estilos/media-query.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body onresize="mudouTamanho()">
+        <header>
+            <h1>Meu site</h1>
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+
+
+                    menu
+                </span>
+            <menu id="itens">
+                <ul>
+                    <li><a href="#">Opção 1</a></li>
+                    <li><a href="#">Opção 2</a></li>
+                    <li><a href="#">Opção 3</a></li>
+                    <li><a href="#">Opção 4</a></li>
+                    <li><a href="#">Opção 5</a></li>
+                </ul>
+            </menu>
+        </header>
+
+        <main>
+            <article>
+                <h2>Testando Media Queries</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo minima, perspiciatis ipsa quis totam adipisci quod suscipit enim, omnis quam eius aut, odio nobis. Praesentium a voluptatum ab itaque aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, veritatis! Id, amet. Fugit assumenda tenetur sequi suscipit asperiores quo odio nesciunt numquam, non similique blanditiis vitae ea, repudiandae error fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aliquam distinctio repudiandae laborum officiis blanditiis reprehenderit odit, eum odio ipsam beatae neque nisi iste sequi est earum repellendus laudantium aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sapiente pariatur, error vel modi vero? Maxime soluta fugiat numquam perspiciatis ea cumque repudiandae illo, doloremque ipsam fuga minus quaerat blanditiis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloremque nisi consequatur debitis architecto dolores velit placeat est omnis impedit facilis earum, enim quos optio iste magni id quod! Mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloribus tenetur facilis adipisci labore ipsum alias, consectetur culpa, obcaecati placeat sunt sapiente aspernatur aliquam vero corrupti voluptatem nisi! Quibusdam, debitis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fuga voluptatibus expedita enim vitae cumque perferendis rem asperiores, amet quaerat minus magni harum quae quisquam, sed odit quasi! Aspernatur, dicta! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi sed maxime molestiae! Eligendi, eum laboriosam numquam blanditiis ipsam at, voluptatibus necessitatibus inventore ut repellat consequuntur doloremque? Modi ab porro error?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem suscipit ab vel odit, minima consectetur accusamus, amet aliquid ducimus numquam culpa tenetur. Reprehenderit a eaque explicabo nam quam accusamus tempora! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex dolorem laudantium labore, quibusdam in fugiat, eveniet itaque odit distinctio harum dicta laboriosam porro totam voluptatem fuga ipsum illum eaque quas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint unde iusto voluptate repudiandae fuga! Neque possimus earum enim provident sunt repudiandae dolorum eaque, in expedita ipsum quaerat perferendis aliquam sit.</p>
+            </article>
+        </main>
+
+        <script>
+            function clickMenu() {
+                if (itens.style.display == 'block') {
+                    itens.style.display = 'none'
+                } else{
+                    itens.style.display = 'block'
+                }
+            }
+
+            function mudouTamanho(){
+                if (window.innerWidth >= 768) {
+                    itens.style.display = 'block'
+                } else{
+                    itens.style.display = 'none'
+                }
+            }
+
+
+        </script>
+
+
+
+</body>
+</html>
