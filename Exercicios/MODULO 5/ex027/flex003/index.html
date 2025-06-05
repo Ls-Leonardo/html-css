@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner{
+            display: flex; 
+            background-color: rgb(0, 139, 139);
+            height: 100px;
+            flex-flow: column wrap;
+            border: 3px dashed red;
+        }
+
+        div.item{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex:auto
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="conteiner"> <!--Esse é o Pai-->
+        <div class="item">Exemplo de BLoco A</div>   <!--filhos-->
+        <div class="item">Exemplo de BLoco B</div>   <!--filhos-->
+        <div class="item">Exemplo de BLoco C</div>   <!--filhos-->
+        <div class="item">Exemplo de BLoco D</div>   <!--filhos-->
+        <div class="item">Exemplo de BLoco E</div>   <!--filhos-->
+        <div class="item">Exemplo de BLoco F</div>   <!--filhos-->
+        <div class="item">Exemplo de BLoco G</div>   <!--filhos-->
+        
+
+
+
+    </div>
+
+
+
+</body>
+</html>
