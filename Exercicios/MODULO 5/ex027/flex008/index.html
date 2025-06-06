@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner{
+            display: flex; 
+            background-color: rgb(0, 139, 139);
+            flex-flow: row wrap;
+            align-items: flex-start;
+            height: 400px;
+        }
+
+        div.item{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+         
+        }
+
+        div#i1{
+             align-self: auto;
+        }
+
+        div#i2{
+            align-self: center;
+        }
+
+        div#i3{
+            align-self: flex-end;
+        }
+
+        div#i4{
+            align-self: auto;
+        }
+
+        div#i5{
+             align-self: auto;
+        }
+
+        div#i6{
+             align-self: auto;
+        }
+
+        div#i7{
+            align-self: stretch;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="conteiner"> <!--Esse é o Pai-->
+        <div class="item" id="i1">A</div>   <!--filhos-->
+        <div class="item" id="i2">B</div>   <!--filhos-->
+        <div class="item" id="i3">C</div>   <!--filhos-->
+        <div class="item" id="i4">D</div>   <!--filhos-->
+        <div class="item" id="i5">E</div>   <!--filhos-->
+        <div class="item" id="i6">F</div>   <!--filhos-->
+        <div class="item" id="i7">G</div>   <!--filhos-->
+        
+    </div>
+
+
+
+</body>
+</html>
